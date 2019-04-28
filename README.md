@@ -12,7 +12,7 @@ uni-app 开发者直接使用此模块
 1. 要使用 `uni-app` 模式开发, 使用此模块
 2. 不使用 `uni-app` 模式开发
 	- `h5` 或 `web` 或 `mui`项目 (window自带crypto模块) 或 `node`环境使用 `fucking-util-signature`
-	- 小程序使用 `fucking-util-signature-uni`
+	- 单独小程序使用 `fucking-util-signature-uni`
 
 ## 常见疑难解答
 - [x] [如何在 Golang 中使用?](https://github.com/lipingruan/fucking-util-signature-all/issues/1)
