@@ -1,6 +1,6 @@
 {
   "name": "fucking-util-signature-all",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "fucking-util-signature": "^1.1.6",
-    "fucking-util-signature-uni": "^1.2.0"
+    "fucking-util-signature-uni": "^1.2.1"
   }
 }
