@@ -1,6 +1,6 @@
 # fucking-util-signature-all
 
-兼容支持 uni-app/普通网页/微信小程序, 目前只测试了web和微信小程序, 其它平台有问题可以提issue
+兼容支持 uni-app/普通网页/微信小程序/h5+, 持续测试集成中, 其它平台有问题可以提issue
 
 模块依赖 **fucking-util** 模块, 请预先安装
 
