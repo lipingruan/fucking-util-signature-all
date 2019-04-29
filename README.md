@@ -90,6 +90,9 @@ console.log ( 'verified', verified );
 
 ## 对象签名/验签
 对象签名模式是先把对象转成`querystring`, 对象内的`json`内容会被转成`JSONString`, 然后再加上签名类型字段, 有盐的话会加盐字段, 最后进行字符串签名.
+应用场景:
+* 微信支付/支付宝支付签名
+* 数据传输签名
 ```javascript
 
 let signature = new Signature ( );
@@ -160,4 +163,30 @@ console.log ( 'signed querystring', querystring );
 let verified = signer.verify ( sign, 'hex' );
 
 console.log ( 'verified', verified );
+```
+## RSA私钥加密/公钥解密
+私钥加密公钥解密的需求不大, 所以只实现了字符串加解密
+```javascript
+let rsa = new Signature.RSA ( );
+
+let keys = Signature.RSA.generateKeys ( 1024 );
+
+// 设置公私钥
+rsa.setPrivateKey ( keys.privateKey );
+
+rsa.setPublicKey ( keys.publicKey );
+
+let uncrypted = 'hello world';
+
+console.log ( 'uncrypted', uncrypted );
+
+// 使用私钥加密
+let encrypted = rsa.keys.encryptPrivate(uncrypted,'base64'/*buffer|binary|hex*/);
+
+console.log ( 'encrypted', encrypted );
+
+// 使用公钥解密
+let decrypted = rsa.keys.decryptPublic ( encrypted, 'utf8' );
+
+console.log ( 'decrypted', decrypted );
 ```
