@@ -21,8 +21,7 @@ uni-app 开发者直接使用此模块
 
 ```javascript
 
-// 多选一
-var Signature = require ( "fucking-util-signature" ); 
+var Signature = require ( "fucking-util-signature-all" ); 
 
 // 生成公私钥 pkcs #8 (需要其它版本可以提issue)
 let { publicKey, privateKey } = Signature.RSA.generateKeys ( );
