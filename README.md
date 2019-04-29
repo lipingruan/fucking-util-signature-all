@@ -134,10 +134,10 @@ let signature = new Signature ( );
 
 let formOptions = signature.formOptions;
 
-formOptions.signKey = 'SIGN';
-formOptions.signTypeKey = 'SIGN_TYPE';
-formOptions.signSaltKey = 'SIGN_SALT';
-formOptions.ignoreKeys = [ 'SIGN', 'SIGN_SALT' ];
+formOptions.signKey = 'sign';
+formOptions.signTypeKey = 'sign_type';
+formOptions.signSaltKey = 'sign_salt';
+formOptions.ignoreKeys = [ 'sign', 'sign_salt' ];
 formOptions.salt = "Default salt"; // 默认盐, 可以不设置
 
 let keys = Signature.RSA.generateKeys ( 1024 );
