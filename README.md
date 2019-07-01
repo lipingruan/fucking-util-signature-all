@@ -16,6 +16,7 @@ uni-app 开发者直接使用此模块
 
 ## 常见疑难解答
 - [x] [如何在 Golang 中使用?](https://github.com/lipingruan/fucking-util-signature-all/issues/1)
+- [x] RSA加解密报错? 可使用 `fucking-util-signature-uni` 代替, [问题参考](https://ask.dcloud.net.cn/article/35851)
 
 ## 使用方法
 
