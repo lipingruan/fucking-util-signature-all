@@ -23,8 +23,9 @@ uni-app 开发者直接使用此模块
 
 var Signature = require ( "fucking-util-signature-all" ); 
 
-// 生成公私钥 pkcs #8 (需要其它版本可以提issue)
-let { publicKey, privateKey } = Signature.RSA.generateKeys ( );
+// 生成公私钥 ( 1024/2048/..., 'pkcs#*' )
+// 默认1024位, pkcs8
+let { publicKey, privateKey } = Signature.RSA.generateKeys ( 1024, 'pkcs8' );
 
 console.log ( publicKey, privateKey );
 
