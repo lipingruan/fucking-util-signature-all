@@ -19,6 +19,7 @@ uni-app 开发者直接使用此模块
 - [x] [如何在 Java 中使用?](https://github.com/lipingruan/fucking-util-signature-all/issues/2)
 - [x] [Java RSA加解密示例](https://github.com/lipingruan/fucking-util-signature-rsa-java)
 - [x] RSA加解密报错? 旧浏览器不支持? 可使用 `fucking-util-signature-uni` 代替, [问题参考](https://ask.dcloud.net.cn/article/35851)
+- [x] [rsa.keys属性参考(修改后的NodeRSA实例)](https://github.com/rzcoder/node-rsa)
 
 ## 使用方法
 
